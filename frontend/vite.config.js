@@ -10,6 +10,6 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5173 ,
-    allowedHosts: ['e-commerce-frontend-15bv.onrender.com']
+    allowedHosts: ['https://e-commerce-backend-2-five.vercel.app/']
   }
 })
