@@ -55,7 +55,7 @@ const ProductDetails = () => {
         setLoading(true);
         
         // Try to fetch product by ID directly from backend
-        const productResponse = await fetch(`https://e-commerce-api-wvt2.onrender.com/api/products/${productId}`);
+        const productResponse = await fetch(`https://e-commerce-api-geon.onrender.com/api/products/${productId}`);
         if (productResponse.ok) {
           const product = await productResponse.json();
           setProduct(product);
@@ -459,3 +459,4 @@ const ProductDetails = () => {
 }
 
 export default ProductDetails;
+
