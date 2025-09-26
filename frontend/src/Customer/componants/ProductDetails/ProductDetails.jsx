@@ -63,7 +63,7 @@ const ProductDetails = () => {
         }
         
         // If direct fetch fails, try to get all products and find by ID
-        const allProductsResponse = await fetch('https://e-commerce-api-wvt2.onrender.com/api/products');
+        const allProductsResponse = await fetch('https://e-commerce-api-geon.onrender.com/api/products');
         if (allProductsResponse.ok) {
           const allProducts = await allProductsResponse.json();
           // Try both string and number comparison for ID
@@ -459,4 +459,5 @@ const ProductDetails = () => {
 }
 
 export default ProductDetails;
+
 
