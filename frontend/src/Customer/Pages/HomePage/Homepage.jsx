@@ -14,7 +14,7 @@ const Homepage = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const response = await fetch('https://e-commerce-api-wvt2.onrender.com/api/men/mens_kurta');
+        const response = await fetch('https://e-commerce-api-geon.onrender.com/api/men/mens_kurta');
         //const response = await fetch(`${api}/api/products`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -66,3 +66,4 @@ const Homepage = () => {
 };
 
 export default Homepage;
+
