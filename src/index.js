@@ -1,23 +1,20 @@
-const express = require("express")
-const cors = require("cors")
+const express = require("express");
+const cors = require("cors");
 
-const app = express()
-app.use(express.json())
-app.use(cors())
+const app = express();
 
+app.use(express.json());
 
-
-const cors = require('cors');
+// Single CORS setup with options for your frontend domain
 app.use(cors({
-  origin: 'https://e-commerce-frontend-pi-ochre.vercel.app', // your frontend domain
+  origin: 'https://e-commerce-frontend-pi-ochre.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true
 }));
 
-
-app.get("/",(req,res)=>{
-     return res.status(200).send({message: "Welcome to the E-commerce API"});
-})
+app.get("/", (req, res) => {
+  return res.status(200).send({ message: "Welcome to the E-commerce API" });
+});
 
 const authRouters = require("./routes/auth.route");
 app.use("/auth", authRouters);
