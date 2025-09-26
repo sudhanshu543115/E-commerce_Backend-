@@ -5,6 +5,16 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
+
+
+const cors = require('cors');
+app.use(cors({
+  origin: 'https://e-commerce-frontend-pi-ochre.vercel.app', // your frontend domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  credentials: true
+}));
+
+
 app.get("/",(req,res)=>{
      return res.status(200).send({message: "Welcome to the E-commerce API"});
 })
