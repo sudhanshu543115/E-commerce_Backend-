@@ -79,7 +79,7 @@ const ProductDetails = () => {
         }
         
         // Also try men's kurta endpoint
-        const mensKurtaResponse = await fetch('https://e-commerce-api-wvt2.onrender.com/api/men/mens_kurta');
+        const mensKurtaResponse = await fetch('https://e-commerce-api-geon.onrender.com/api/men/mens_kurta');
         if (mensKurtaResponse.ok) {
           const data = await mensKurtaResponse.json();
           const foundProduct = data.mens_kurta?.find(item => 
@@ -459,5 +459,6 @@ const ProductDetails = () => {
 }
 
 export default ProductDetails;
+
 
 
