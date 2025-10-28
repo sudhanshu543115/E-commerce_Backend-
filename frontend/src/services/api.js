@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://e-commerce-api-geon.onrender.com/';
+const API_BASE_URL = 'https://e-commerce-backend-1unx.onrender.com/';
 
 // Helper function to get auth headers
 const getAuthHeaders = () => {
