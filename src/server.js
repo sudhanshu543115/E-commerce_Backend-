@@ -5,7 +5,8 @@ const cors = require('cors');
 
 
 app.use(cors({
-  origin: 'https://e-commerce-frontend-pi-ochre.vercel.app/',
+  origin: ['https://e-commerce-frontend-pi-ochre.vercel.app/','http://localhost:5173/'],
+  
   credentials: true
 }));
 
