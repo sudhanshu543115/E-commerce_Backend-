@@ -15,7 +15,7 @@ const Homepage = () => {
       try {
         setLoading(true);
         
-        const response = await fetch('https://e-commerce-api-geon.onrender.com/api/products');
+        const response = await fetch('https://e-commerce-complete.onrender.com/api/products');
         //const response = await fetch(`${api}` /api/products);
         
         if (!response.ok) {
@@ -75,4 +75,5 @@ const Homepage = () => {
 }
 
 export default Homepage
+
 
