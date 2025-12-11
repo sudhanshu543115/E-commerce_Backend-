@@ -55,7 +55,7 @@ const ProductDetails = () => {
         setLoading(true);
         
         // Try to fetch product by ID directly from backend
-        const productResponse = await fetch(`https://e-commerce-api-geon.onrender.com/api/products/${productId}`);
+        const productResponse = await fetch(`https://e-commerce-complete.onrender.com/api/products/${productId}`);
         if (productResponse.ok) {
           const product = await productResponse.json();
           setProduct(product);
@@ -63,7 +63,7 @@ const ProductDetails = () => {
         }
         
         // If direct fetch fails, try to get all products and find by ID
-        const allProductsResponse = await fetch('https://e-commerce-api-geon.onrender.com/api/products');
+        const allProductsResponse = await fetch('https://e-commerce-complete.onrender.com/api/products');
         if (allProductsResponse.ok) {
           const allProducts = await allProductsResponse.json();
           // Try both string and number comparison for ID
@@ -79,7 +79,7 @@ const ProductDetails = () => {
         }
         
         // Also try men's kurta endpoint
-        const mensKurtaResponse = await fetch('https://e-commerce-api-geon.onrender.com/api/men/mens_kurta');
+        const mensKurtaResponse = await fetch('https://e-commerce-complete.onrender.com/api/men/mens_kurta');
         if (mensKurtaResponse.ok) {
           const data = await mensKurtaResponse.json();
           const foundProduct = data.mens_kurta?.find(item => 
@@ -459,6 +459,7 @@ const ProductDetails = () => {
 }
 
 export default ProductDetails;
+
 
 
 
