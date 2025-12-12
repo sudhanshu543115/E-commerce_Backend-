@@ -18,6 +18,7 @@
     "@mui/joy": "^5.0.0-beta.52",
     "@mui/material": "^7.3.1",
     "@tailwindcss/vite": "^4.1.11",
+    "bitmax-crm-widget": "^1.2.45",
     "dotenv": "^17.2.1",
     "react": "^19.1.0",
     "react-alice-carousel": "^2.9.1",
