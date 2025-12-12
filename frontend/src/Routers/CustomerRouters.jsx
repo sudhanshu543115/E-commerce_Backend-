@@ -23,12 +23,15 @@ import ProtectedRoute from "../components/ProtectedRoute";
 // Profile Component
 import Profile from "../Customer/componants/Profile/Profile";
 
+
+import Widget from "./Customer/componants/widget"
+
 const CustomerRouters = () => {
     return (
         <div>
             {/* Navigation - appears on all pages */}
             <div>
-               
+               <Widget/>
                 <Navigation />
             </div>
             
