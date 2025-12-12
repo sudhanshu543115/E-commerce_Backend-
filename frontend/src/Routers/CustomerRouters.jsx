@@ -24,7 +24,7 @@ import ProtectedRoute from "../components/ProtectedRoute";
 import Profile from "../Customer/componants/Profile/Profile";
 
 
-import Widget from "../Customer/componants/Widget"
+import Widget from "../../src/Customer/componants/Widget"
 
 const CustomerRouters = () => {
     return (
